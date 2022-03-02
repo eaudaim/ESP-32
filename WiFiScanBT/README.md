@@ -1,4 +1,4 @@
-Scan wifi AP and return on a bluetooth serial port SSID and RSSI for each network found. Also return a number for the type of encryption : TKIP (WPA) = 2;  WEP = 5;   CCMP (WPA) = 4;  NONE = 7;  AUTO = 8
+Scan wifi AP and return on a bluetooth serial port the SSID and RSSI for each network found. Also return a number for the type of encryption : TKIP (WPA) = 2;  WEP = 5;   CCMP (WPA) = 4;  NONE = 7;  AUTO = 8
 
 
 
