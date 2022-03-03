@@ -24,12 +24,14 @@ void loop()
 
     if (n == 0) {
         SerialBT.println("no networks found");
-    } else {
+    } 
+    else {
         SerialBT.print(n);
         SerialBT.println(" networks found");
+
         for (int i = 0; i < n; ++i) {
-            
-            // Print SSID and RSSI for each network found on the bluetooth serial, also print a number for the type of encryption : TKIP (WPA)= 2, WEP= 5, CCMP (WPA)= 4, NONE= 7, AUTO= 8
+
+            // Print SSID, RSSI an encryption for each network found on the bluetooth serial
             SerialBT.print(i + 1);
             SerialBT.print(": ");
             SerialBT.print(WiFi.SSID(i));
@@ -38,8 +40,45 @@ void loop()
             SerialBT.print(")");
             SerialBT.println(WiFi.encryptionType(i));                 
             delay(10);
+
+                if(WiFi.encryptionType(i) == 0) 
+                {
+                    SerialBT.println("OPEN");
+                }
+
+                else if(WiFi.encryptionType(i) == 1)
+                {
+                    SerialBT.println("WEP");
+                }
+
+                else if(WiFi.encryptionType(i) == 2)
+                {
+                    SerialBT.println("WPA_PSK");
+                }
+
+                else if(WiFi.encryptionType(i) == 3)
+                {
+                    SerialBT.println("WPA2_PSK");
+                }
+
+                else if(WiFi.encryptionType(i) == 4)
+                {
+                    SerialBT.println("WPA_WPA2_PSK");
+                }
+
+                else if(WiFi.encryptionType(i) == 5)
+                {
+                    SerialBT.println("WPA2_ENTREPRISE");
+                }
+
+                else
+                {
+                    SerialBT.println("Wifi is unknown encrypted");
+                }
+                    
+                }
         }
-    }
+    
     SerialBT.println("");
 
     // Wait a bit before scanning again
