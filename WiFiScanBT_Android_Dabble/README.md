@@ -12,6 +12,6 @@ _BluetoothSerial :_     https://github.com/espressif/arduino-esp32/tree/master/l
 
 
                                                                    ---
-Issues : Bluetooth serial don't work if Dabble app is not connected with the ESP32, also, ther's some conflict with Dabble bluetooth connexion and bluetooth serial connexion 
+Issues : Bluetooth serial don't work if Dabble app is not connected with the ESP32, also, there's some conflict with Dabble bluetooth connexion and bluetooth serial connexion 
 
 **WORK IN PROGRESS**
