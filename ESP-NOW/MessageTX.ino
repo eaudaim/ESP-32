@@ -6,7 +6,7 @@
 #include <WiFi.h>
 
 // Stockage de l'adresse MAC du récepteur pour usage ultérieur. Remplacer les 'XX' par les valeur notées plus avant.
-uint8_t MAC_recepteur[] = {0x94, 0xB9, 0x7E, 0xD4, 0xC1, 0x7C};
+uint8_t MAC_recepteur[] = {0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX};
 
 // La variable qui sera envoyée au récepteur
 String maValeurEnvoyee;
