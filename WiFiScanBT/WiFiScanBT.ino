@@ -26,8 +26,10 @@ void loop()
         SerialBT.println("no networks found");
     } 
     else {
+        SerialBT.println("------------------");
         SerialBT.print(n);
-        SerialBT.println(" networks found");
+        SerialBT.println(" NETWORK(s) FIND: ");
+        SerialBT.println();
 
         for (int i = 0; i < n; ++i) {
 
@@ -44,36 +46,43 @@ void loop()
                 if(WiFi.encryptionType(i) == 0) 
                 {
                     SerialBT.println("OPEN");
+                    SerialBT.println();
                 }
 
                 else if(WiFi.encryptionType(i) == 1)
                 {
                     SerialBT.println("WEP");
+                    SerialBT.println();
                 }
 
                 else if(WiFi.encryptionType(i) == 2)
                 {
                     SerialBT.println("WPA_PSK");
+                    SerialBT.println();
                 }
 
                 else if(WiFi.encryptionType(i) == 3)
                 {
                     SerialBT.println("WPA2_PSK");
+                    SerialBT.println();
                 }
 
                 else if(WiFi.encryptionType(i) == 4)
                 {
                     SerialBT.println("WPA_WPA2_PSK");
+                    SerialBT.println();
                 }
 
                 else if(WiFi.encryptionType(i) == 5)
                 {
                     SerialBT.println("WPA2_ENTREPRISE");
+                    SerialBT.println();
                 }
 
                 else
                 {
                     SerialBT.println("Wifi is unknown encrypted");
+                    SerialBT.println();
                 }
                     
                 }
