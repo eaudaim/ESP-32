@@ -1,4 +1,5 @@
 An upgrade of the classic ESPcam sketch with an OTA server.
+(work in progress)
 
 
 
