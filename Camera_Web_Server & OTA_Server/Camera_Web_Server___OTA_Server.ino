@@ -38,8 +38,8 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "SFR_C2D0";
-const char* password = "longduzboub";
+const char* ssid = "****";
+const char* password = "****";
 AsyncWebServer server(8080);
 
 void startCameraServer();
